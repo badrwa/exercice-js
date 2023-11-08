@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+     crossorigin="anonymous">
+    
+
+    <title>EX6 in js</title>
+</head>
+<body>
+    <title>Find Max</title>
+</head>
+<body>
+ <h2>Enter three numbers</h2>
+ <input type="number" id="A" placeholder="Number 1">
+ <input type="number" id="B" placeholder="Number 2">
+ <input type="number" id="C" placeholder="Number 3">
+ <button onclick="findMax()">Find Max</button>
+ <h2 id="output"></h2>
+
+         <script
+     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" 
+    crossorigin="anonymous">
+    </script>
+    
+  
+
+        
+    <script>
+        function findMax() {
+          let a = parseInt(document.getElementById('A').value);
+          let b = parseInt(document.getElementById('B').value);
+          let c = parseInt(document.getElementById('C').value);
+    
+          let max = a;
+    
+          if (b > max) {
+             max = b;
+          }
+    
+          if (c > max) {
+             max = c;
+          }
+    
+          document.getElementById('output').innerHTML = "The largest number is: " + max;
+        }
+    
+        
+    </script>
+    
+    
+</body>
+</html>
